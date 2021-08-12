@@ -7,8 +7,8 @@ bases:
   - ../../common/openshift-pipelines/
   - manuela-ci/
   - ../../common/tekton/
-  - ../../common/advance-cluster-manager/
-  - ../../common/autoapprover/
+  # ../../common/advance-cluster-manager/
+  # ../../common/autoapprover/
   # managed-clusters/
   - ../../common/opendatahub/
 
