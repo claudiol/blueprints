@@ -3,7 +3,7 @@ resources:
   - manuela-central/argocd-manuela.yaml
 
 bases:
-  - ../../common/argocd/
+  # ../../common/argocd/
   - ../../common/openshift-pipelines/
   - manuela-ci/
   - ../../common/tekton/
