@@ -3,4 +3,4 @@ bases:
 - ../datacenter
 
 patches:
-- helm.patch.yaml
+- helm.yaml
