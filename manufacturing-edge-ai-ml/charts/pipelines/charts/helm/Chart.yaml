@@ -1,0 +1,4 @@
+apiVersion: v2
+description: A Helm chart to aid parameterization
+name: helm
+version: 0.0.1
