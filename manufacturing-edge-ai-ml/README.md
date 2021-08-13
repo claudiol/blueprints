@@ -12,8 +12,12 @@
    ```
 
 1. Preview the changes
-   `cd blueprints/manufacturing-edge-ai-ml`
-   `helm template manuela . --values values-secret.yaml --debug`
+   ```
+   cd blueprints/manufacturing-edge-ai-ml
+   helm template manuela . --values values-secret.yaml --debug
+   ```
 1. Apply it to your cluster
-   `oc login`
-   `helm install manuela . --values values-secret.yaml`
+   ```
+   oc login
+   helm install manuela . --values values-secret.yaml
+   ```
