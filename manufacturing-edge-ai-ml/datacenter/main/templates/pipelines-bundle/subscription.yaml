@@ -4,9 +4,10 @@ metadata:
   name: openshift-pipelines-operator-rh
   namespace: openshift-operators
 spec:
-  channel: preview
+  channel: {{ .Values.subscriptions.version.pipelines.channel }}
   installPlanApproval: {{ .Values.subscriptions.installPlanApproval }}
   name: openshift-pipelines-operator-rh
-  source: redhat-operators
+  source: {{ .Values.subscriptions.version.pipelines.source }}
   sourceNamespace: openshift-marketplace
-  startingCSV: openshift-pipelines-operator.{{ .Values.subscriptions.version.pipelines }}
+  startingCSV: redhat-openshift-pipelines.{{ .Values.subscriptions.version.pipelines.csv }}
+

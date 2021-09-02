@@ -4,10 +4,12 @@ metadata:
   name: opendatahub-operator
   namespace: openshift-operators
 spec:
-  channel: beta
+  channel: {{ .Values.subscriptions.version.opendatahub.channel }}
   installPlanApproval: {{ .Values.subscriptions.installPlanApproval }}
   name: opendatahub-operator
-  source: community-operators
+  source: {{ .Values.subscriptions.version.opendatahub.source }}
   sourceNamespace: openshift-marketplace
-  startingCSV: opendatahub-operator.{{ .Values.subscriptions.version.opendatahub }}
+  startingCSV: opendatahub-operator.{{ .Values.subscriptions.version.opendatahub.csv }}
+  
+
 
