@@ -2,6 +2,7 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
   name: red-hat-camel-k
+  namespace: manuela-data-lake-central-s3-store
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
 spec:
@@ -10,6 +11,4 @@ spec:
   name: red-hat-camel-k
   source: {{ .Values.subscriptions.version.redhatcamelk.source }}
   sourceNamespace: openshift-marketplace
-{{- if eq .Values.subscriptions.useCSV "True" }}
   startingCSV: red-hat-camel-k-operator.{{ .Values.subscriptions.version.redhatcamelk.csv }}
-{{- end }}
