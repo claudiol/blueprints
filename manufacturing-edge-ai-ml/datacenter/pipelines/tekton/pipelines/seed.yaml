@@ -24,7 +24,7 @@ spec:
     - name: url_configmapkey
       value: GIT_DEV_REPO_URL
     - name: revision
-      value: master
+      value: main
     - name: subdirectory
       value: dev
     - name: deleteExisting
